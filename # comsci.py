@@ -20,9 +20,9 @@ def get_rating(average):
         return "Good"
     elif 81 <= average <= 85:
         return "Satisfactory"
-    elif 76 <= average <= 81:  # Note: you said 76-81, overlaps with 81 above
+    elif 76 <= average <= 81: 
         return "Substandard"
-    else:  # below 76
+    else: 
         return "Fail"
 
 # Get quarter grades
@@ -37,9 +37,9 @@ summative = get_grade_input("Summative Test")
 # Calculate average of all 5 scores
 average = (q1 + q2 + q3 + q4 + summative) / 5
 
-# Get the rating string based on the average
+# Get the rating :D
 rating = get_rating(average)
 
-# Display the results
-print(f"\nYour Average: {average:.2f}")
-print(f"Performance Rating: {rating}")
+# Results hmm
+print("Your Average:",average)
+print("Performance Rating:",rating)
